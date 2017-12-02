@@ -298,7 +298,7 @@
                 operationInfo = JsonConvert.DeserializeObject<OperationInfo<T>>(jsonString);
 
                 // Operation status {NotStarted, Running, Cancelling, Cancelled, Succeded, Failed}
-                Console.WriteLine(" Operation Status: {0}. \t Will check again in 10 seconds.", operationInfo.Status);
+               // Console.WriteLine(" Operation Status: {0}. \t Will check again in 10 seconds.", operationInfo.Status);
 
                 if (OperationStatus.Succeeded.ToString().Equals(operationInfo.Status) ||
                     OperationStatus.Failed.ToString().Equals(operationInfo.Status) ||
