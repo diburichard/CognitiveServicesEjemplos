@@ -79,26 +79,26 @@
         /// <param name="catalogFilePath">Catalog file path</param>
         /// <param name="catalogDisplayName">Name for the catalog</param>
         /// <returns>Statistics about the catalog import operation.</returns>
-        public CatalogImportStats UploadCatalog(string modelId, string catalogFilePath, string catalogDisplayName)
-        {
-            Console.WriteLine("Uploading " + catalogDisplayName + " ...");
-            string uri = BaseUri + "/models/" + modelId + "/catalog?catalogDisplayName=" + catalogDisplayName;
-            using (var filestream = new FileStream(catalogFilePath, FileMode.Open, FileAccess.Read))
-            {
-                var response = _httpClient.PostAsync(uri, new StreamContent(filestream)).Result;
+   //     public CatalogImportStats UploadCatalog(string modelId, string catalogFilePath, string catalogDisplayName)
+   //     {
+   ////         Console.WriteLine("Uploading " + catalogDisplayName + " ...");
+   //         string uri = BaseUri + "/models/" + modelId + "/catalog?catalogDisplayName=" + catalogDisplayName;
+   //         using (var filestream = new System.IO.FileStream(catalogFilePath, FileMode.Open, FileAccess.Read))
+   //         {
+   //             var response = _httpClient.PostAsync(uri, new StreamContent(filestream)).Result;
 
-                if (!response.IsSuccessStatusCode)
-                {
-                    throw new Exception(
-                        String.Format("Error {0}: Failed to import catalog items {1}, for model {2} \n reason {3}",
-                            response.StatusCode, catalogFilePath, modelId, ExtractErrorInfo(response)));
-                }
+   //             if (!response.IsSuccessStatusCode)
+   //             {
+   //                 throw new Exception(
+   //                     String.Format("Error {0}: Failed to import catalog items {1}, for model {2} \n reason {3}",
+   //                         response.StatusCode, catalogFilePath, modelId, ExtractErrorInfo(response)));
+   //             }
 
-                var jsonString = ExtractReponse(response);
-                var catalogImportStats = JsonConvert.DeserializeObject<CatalogImportStats>(jsonString);
-                return catalogImportStats;
-            }
-        }
+   //             var jsonString = ExtractReponse(response);
+   //             var catalogImportStats = JsonConvert.DeserializeObject<CatalogImportStats>(jsonString);
+   //             return catalogImportStats;
+   //         }
+   //     }
 
         /// <summary>
         /// Upload usage data to a model.
@@ -109,27 +109,27 @@
         /// <param name="usageFilePath">Usage file path</param>
         /// <param name="usageDisplayName">Name for the usage data being uploaded</param>
         /// <returns>Statistics about the usage upload operation.</returns>
-        public UsageImportStats UploadUsage(string modelId, string usageFilePath, string usageDisplayName)
-        {
-            Console.WriteLine("Uploading " + usageDisplayName + " ...");
+     //   public UsageImportStats UploadUsage(string modelId, string usageFilePath, string usageDisplayName)
+     //   {
+     ////       Console.WriteLine("Uploading " + usageDisplayName + " ...");
 
-            string uri = BaseUri + "/models/" + modelId + "/usage?usageDisplayName=" + usageDisplayName;
+     //       string uri = BaseUri + "/models/" + modelId + "/usage?usageDisplayName=" + usageDisplayName;
 
-            using (var filestream = new FileStream(usageFilePath, FileMode.Open, FileAccess.Read))
-            {
-                var response = _httpClient.PostAsync(uri, new StreamContent(filestream)).Result;
-                if (!response.IsSuccessStatusCode)
-                {
-                    throw new Exception(
-                        String.Format("Error {0}: Failed to import usage data {1}, for model {2} \n reason {3}",
-                            response.StatusCode, usageFilePath, modelId, ExtractErrorInfo(response)));
-                }
+     //       //using (var filestream = new FileStream(usageFilePath, FileMode.Open, FileAccess.Read))
+     //       //{
+     //       //    var response = _httpClient.PostAsync(uri, new StreamContent(filestream)).Result;
+     //       //    if (!response.IsSuccessStatusCode)
+     //       //    {
+     //       //        throw new Exception(
+     //       //            String.Format("Error {0}: Failed to import usage data {1}, for model {2} \n reason {3}",
+     //       //                response.StatusCode, usageFilePath, modelId, ExtractErrorInfo(response)));
+     //       //    }
 
-                var jsonString = ExtractReponse(response);
-                var usageImportStats = JsonConvert.DeserializeObject<UsageImportStats>(jsonString);
-                return usageImportStats;
-            }
-        }
+     //       //    var jsonString = ExtractReponse(response);
+     //       //    var usageImportStats = JsonConvert.DeserializeObject<UsageImportStats>(jsonString);
+     //       //    return usageImportStats;
+     //       //}
+     //   }
 
 
         /// <summary>
@@ -307,7 +307,7 @@
                     break;
                 }
 
-                Thread.Sleep(TimeSpan.FromSeconds(10));
+//Thread.Sleep(TimeSpan.FromSeconds(10));
             }
             return operationInfo;
         }
