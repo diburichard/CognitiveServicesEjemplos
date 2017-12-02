@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Cognitive.BingSpeec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Cognitive.BingSpeech.Sample.Droid", "Sample\Droid\Xamarin.Cognitive.BingSpeech.Sample.Droid.csproj", "{140F5277-EDB1-40E6-9593-340447B67E9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Cognitive.Knowledge", "Xamarin.Cognitive.Knowledge\Xamarin.Cognitive.Knowledge.csproj", "{6050C140-CDF4-4894-A822-BC11A69E4CBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,30 @@ Global
 		{140F5277-EDB1-40E6-9593-340447B67E9C}.Release|x86.ActiveCfg = Release|Any CPU
 		{140F5277-EDB1-40E6-9593-340447B67E9C}.Release|x86.Build.0 = Release|Any CPU
 		{140F5277-EDB1-40E6-9593-340447B67E9C}.Release|x86.Deploy.0 = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|ARM.Build.0 = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|x64.Build.0 = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Debug|x86.Build.0 = Debug|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|ARM.Build.0 = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|iPhone.Build.0 = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|x64.ActiveCfg = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|x64.Build.0 = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|x86.ActiveCfg = Release|Any CPU
+		{6050C140-CDF4-4894-A822-BC11A69E4CBD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
