@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Cognitive.BingSpeech.Sample.LanguageAPI">
+    <ContentPage.Content>
+        <StackLayout  >
+            <WebView x:Name="webview" Source="https://webchat.botframework.com/embed/MiBotIngenieria?s=spdhrA31p3Q.cwA.NX0.Rp3wMT6Sseh56P0I_ndlCO0vHWJbkIN04UtDQ_IwJH0" HeightRequest="300" WidthRequest="300"></WebView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

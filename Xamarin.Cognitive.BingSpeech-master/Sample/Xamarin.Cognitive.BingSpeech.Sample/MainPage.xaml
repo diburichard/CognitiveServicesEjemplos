@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Xamarin.Cognitive.BingSpeech.Sample" x:Class="Xamarin.Cognitive.BingSpeech.Sample.MainPage">
+    <Grid>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout Padding="20,80,20,0" Orientation="Vertical" Spacing="15">
+                <Button x:Name="RecordButton" Text="Grabar" FontSize="24" HorizontalOptions="FillAndExpand" Clicked="Record_Clicked" />
+                <Label Text="(15 sec max)" FontSize="14" HorizontalOptions="Center" />
+                <Label Text="Output:" />
+                <Label x:Name="ResultsLabel" HorizontalOptions="CenterAndExpand" LineBreakMode="WordWrap" MinimumHeightRequest="200" MinimumWidthRequest="400" />
+            </StackLayout>
+        </ScrollView>
+        <ContentView x:Name="spinnerContent" IsVisible="false" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="#A6FFFFFF">
+            <ActivityIndicator x:Name="spinner" WidthRequest="100" HeightRequest="100" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+        </ContentView>
+    </Grid>
+</ContentPage>
