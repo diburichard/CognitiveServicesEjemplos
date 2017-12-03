@@ -21,10 +21,11 @@ namespace Xamarin.Cognitive.BingSpeech.Sample
         private readonly EmotionServiceClient emotionServiceClient;
         public VisionAPI ()
 		{
+            InitializeComponent();
             this.faceServiceClient = new FaceServiceClient("a795a1dfd1d4495c9fc338ec4794d841", "https://westcentralus.api.cognitive.microsoft.com/face/v1.0");
             this.emotionServiceClient = new EmotionServiceClient("db027e25d5f646bb9eb44d1cd561d5cb", "https://westus.api.cognitive.microsoft.com/emotion/v1.0");
-            InitializeComponent();
-		}
+
+        }
 
         private async void UploadPictureButton_Clicked(object sender, EventArgs e)
         {
@@ -36,13 +37,13 @@ namespace Xamarin.Cognitive.BingSpeech.Sample
             var file = await CrossMedia.Current.PickPhotoAsync();
             if (file == null)
                 return;
-            this.Indicator1.IsVisible = true;
-            this.Indicator1.IsRunning = true;
-            Image1.Source = ImageSource.FromStream(() => file.GetStream());
-            FaceEmotionDetection theData = await DetectFaceAndEmotionsAsync(file);
-            this.BindingContext = theData;
-            this.Indicator1.IsRunning = false;
-            this.Indicator1.IsVisible = false;
+            //this.Indicator1.IsVisible = true;
+            //this.Indicator1.IsRunning = true;
+            //Image1.Source = ImageSource.FromStream(() => file.GetStream());
+            //FaceEmotionDetection theData = await DetectFaceAndEmotionsAsync(file);
+            //this.BindingContext = theData;
+            //this.Indicator1.IsRunning = false;
+            //this.Indicator1.IsVisible = false;
         }
 
 
@@ -62,13 +63,13 @@ namespace Xamarin.Cognitive.BingSpeech.Sample
             });
             if (file == null)
                 return;
-            this.Indicator1.IsVisible = true;
-            this.Indicator1.IsRunning = true;
-            Image1.Source = ImageSource.FromStream(() => file.GetStream());
+            //this.Indicator1.IsVisible = true;
+            //this.Indicator1.IsRunning = true;
+            //Image1.Source = ImageSource.FromStream(() => file.GetStream());
             FaceEmotionDetection theData = await DetectFaceAndEmotionsAsync(file);
             this.BindingContext = theData;
-            this.Indicator1.IsRunning = false;
-            this.Indicator1.IsVisible = false;
+            //this.Indicator1.IsRunning = false;
+            //this.Indicator1.IsVisible = false;
         }
 
 
