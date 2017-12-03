@@ -34,7 +34,7 @@ namespace Xamarin.Cognitive.BingSpeech.Sample
                 MenuItems = new ObservableCollection<MasterDetailPageCognitiveMenuItem>(new[]
                 {
                     new MasterDetailPageCognitiveMenuItem { Id = 0, Title = "Speech API", TargetType = typeof(MainPage) },
-                    new MasterDetailPageCognitiveMenuItem { Id = 1, Title = "Vision API", TargetType=typeof(VisionAPI) },
+                    new MasterDetailPageCognitiveMenuItem { Id = 1, Title = "Vision API", TargetType=typeof(APIVision) },
                     new MasterDetailPageCognitiveMenuItem { Id = 2, Title = "Knowledge API", TargetType=typeof(KnowledgeAPI) },
                     new MasterDetailPageCognitiveMenuItem { Id = 3, Title = "Language API", TargetType=typeof(LanguageAPI) },
                     new MasterDetailPageCognitiveMenuItem { Id = 4, Title = "Search API" },

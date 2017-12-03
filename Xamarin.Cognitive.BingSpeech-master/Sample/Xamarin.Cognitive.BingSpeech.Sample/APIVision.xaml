@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Xamarin.Cognitive.BingSpeech.Sample.VisionAPI">
+             x:Class="Xamarin.Cognitive.BingSpeech.Sample.APIVision">
     <ContentPage.Content>
-        <!--<StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Vertical">
             <Button x:Name="TakePictureButton" Clicked="TakePictureButton_Clicked"
       Text="Take from camera"/>
             <Button x:Name="UploadPictureButton" Clicked="UploadPictureButton_Clicked"
@@ -41,6 +41,6 @@
                 <Label x:Name="MoustacheLabel"
         Text="{Binding Path=Moustache}"/>
             </StackLayout>
-        </StackLayout>-->
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
