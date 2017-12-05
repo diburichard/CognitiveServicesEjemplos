@@ -4,9 +4,19 @@
              x:Class="Xamarin.Cognitive.BingSpeech.Sample.KnowledgeAPI">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry Text="5C5-00025"  x:Name="myEntry"/>
+            <Button Text="Buscar Recomendaciones" Clicked="Empezar_Busqueda" ></Button>
+            <ListView x:Name="ModelosView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding DisplayName}"  TextColor="Black"  />
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ContentView x:Name="spinnerContent" IsVisible="false" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="#A6FFFFFF">
+                <ActivityIndicator x:Name="spinner" WidthRequest="100" HeightRequest="100" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </ContentView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
